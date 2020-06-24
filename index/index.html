@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--- Basic Page Needs  -->
     <meta charset="utf-8" />
     <title>Cryspy || Mat levering</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Mobile Specific Meta  -->
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
     />
-    <!-- CSS -->
+
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
+      fbq('init', '262754824993017');
+      fbq('track', 'PageView');
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none;"
+        src="https://www.facebook.com/tr?id=262754824993017&ev=PageView&noscript=1"
+    /></noscript>
+
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 1872436, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-89308727-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-89308727-1');
+    </script>
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/jquery-ui.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
@@ -20,7 +85,7 @@
     <link rel="stylesheet" href="assets/css/typography.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
-    <!-- Favicon -->
+
     <link
       rel="shortcut icon"
       type="image/png"
@@ -29,12 +94,10 @@
   </head>
 
   <body>
-    <!-- preloader area start -->
     <div id="preloader">
       <div class="spinner"></div>
     </div>
-    <!-- preloader area end -->
-    <!-- header area start -->
+
     <header class="header-area">
       <div class="container">
         <div class="row">
@@ -67,8 +130,7 @@
         </div>
       </div>
     </header>
-    <!-- header area end -->
-    <!-- slider area start -->
+
     <section class="slider-area" id="home">
       <div class="container">
         <div class="slider-content d-flex flex-center">
@@ -82,8 +144,8 @@
                 Bli med i beta-testing av denne nye leveringsmåten i Bodø!
               </p>
               <div class="btn-area">
-                <a href="#">Bli Bruker</a>
-                <a href="#">Bli Sjåfør</a>
+                <a href="#contact">Bli Bruker</a>
+                <a href="#contact">Bli Sjåfør</a>
               </div>
             </div>
           </div>
@@ -110,8 +172,7 @@
         </div>
       </div>
     </section>
-    <!-- slider area end -->
-    <!-- about area start -->
+
     <section class="about-area ptb--110" id="about">
       <div class="container">
         <div class="row">
@@ -164,8 +225,7 @@
         </div>
       </div>
     </section>
-    <!-- about area end -->
-    <!-- feature area start -->
+
     <section class="feature-area ptb--110 bg-theme" id="features">
       <div class="container">
         <div class="section-title">
@@ -245,14 +305,13 @@
         </div>
       </div>
     </section>
-    <!-- feature area end -->
-    <!-- screen slider area start -->
+
     <section class="screen-slider-area ptb--120" id="screenshot">
       <div class="container">
         <div class="section-title text-black">
           <h2>Screenshot</h2>
           <p>
-            Liten samkebit om hva som kommer
+            Liten smakebit av hva som kommer
           </p>
         </div>
         <div class="row">
@@ -285,8 +344,7 @@
         </div>
       </div>
     </section>
-    <!-- screen slider area end -->
-    <!-- download area start -->
+
     <section class="download-area ptb--120 bg-theme" id="download">
       <div class="container">
         <div class="section-title">
@@ -294,22 +352,21 @@
           <p></p>
         </div>
         <div class="download-btns btn-area text-center">
-          <a href="#"><i class="fa fa-android"></i>Android</a>
-          <a href="#"><i class="fa fa-apple"></i>Apple</a>
-          <a href="#"><i class="fa fa-windows"></i>Nettside</a>
+          <a href="#contact"><i class="fa fa-android"></i>Android</a>
+          <a href="#contact"><i class="fa fa-apple"></i>Apple</a>
+          <a href="#contact"><i class="fa fa-windows"></i>Nettside</a>
         </div>
       </div>
     </section>
 
-    <!-- map area start -->
     <div id="map"></div>
-    <!-- map area end -->
-    <!-- contact area start -->
+
     <div class="contact-area bg-theme">
       <div class="container">
         <section class="contact-inner" id="contact">
           <div class="section-title text-black">
             <h2>Bli bruker</h2>
+            <h4>Få tidlig tilgang på tjenesten</h4>
           </div>
           <div class="contact-flex-container">
             <div class="contact-address">
@@ -322,7 +379,7 @@
                   <i class="fa fa-home"></i>Bodø<br />8002, Norge
                 </li>
 
-                <li><i class="fa fa-envelope"></i>Post@cryspyfood.no</li>
+                <li><i class="fa fa-envelope"></i>Christer@cryspyfood.no</li>
               </ul>
             </div>
             <div class="contact-form">
@@ -340,12 +397,12 @@
                   name="email"
                   placeholder="Din epost*"
                 />
-                <textarea
-                  name="msg"
+                <input
+                  type="phone"
                   class="input"
-                  id="msg"
-                  placeholder="Din beskjed*"
-                ></textarea>
+                  name="phone"
+                  placeholder="Ditt telefonnummer*"
+                />
                 <input type="submit" id="send" value="Send" />
               </form>
             </div>
@@ -353,8 +410,7 @@
         </section>
       </div>
     </div>
-    <!-- contact area end -->
-    <!-- footer area start -->
+
     <footer>
       <div class="footer-area bg-theme ptb--50">
         <div class="container">
@@ -388,12 +444,9 @@
         </div>
       </div>
     </footer>
-    <!-- footer area end -->
 
-    <!-- google map activation start-->
     <script>
       function initMap() {
-        // Styles a map in night mode.
         var map = new google.maps.Map(document.getElementById('map'), {
           center: { lat: 67.312427, lng: 14.367219 },
           zoom: 6,
@@ -584,8 +637,7 @@
         });
       }
     </script>
-    <!-- google map activation end -->
-    <!-- Scripts -->
+
     <script src="assets/js/jquery-3.2.0.min.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
