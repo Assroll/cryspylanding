@@ -6,7 +6,7 @@
     ===================
   
     1. Theme default CSS
-    2. Home Page
+    2. e Page
         2.1 Header Area
         2.2 Slider Area
             2.2.1 background video
@@ -244,6 +244,7 @@ font-family: 'Open Sans', sans-serif;
   width: 100%;
   display: flex;
   align-items: center;
+  overflow-x: hidden;
   background: rgba(0, 0, 0, 0) linear-gradient(130deg, #276955, #93b4aa) repeat
     scroll 0 0;
 }
